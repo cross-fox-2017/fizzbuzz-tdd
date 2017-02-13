@@ -1,3 +1,6 @@
+const chai = require('chai');
+const assertArrays = require('chai-arrays');
+chai.use(assertArrays)
 const expect = require('chai').expect
 const fizz = require('../fizzbuzz.js')
 console.log(fizz.buzz);
@@ -32,5 +35,8 @@ describe("fizzbuzz testing", function() {
   })
   it('expect fizzbuzzer to be an array', function() {
     expect(fizz.buzzer(4)).to.be.a('Array')
+  })
+  it('expect fizzbuzzer 15 to be an list of item', function() {
+    expect(fizz.buzzer(15)).to.be.equalTo([1,2,"Fizz",4,"Buzz","Fizz",7,8,"Fizz","Buzz",11,"Fizz",13,14,"FizzBuzz"])
   })
 })
