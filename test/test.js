@@ -2,6 +2,10 @@ const assert = require('assert');
 const test   = require('../fizzbuzz.js')
 const should = require('chai').should()
 
+// describe('Check if' ,function() {
+//   // body...
+// })
+
 describe('Test -> Operation Result :', function() {
   it('if number divisible by three and five, return "FizzBuzz" ', function() {
     test.fizzbuzz(15).should.equal("FizzBuzz");
@@ -16,6 +20,6 @@ describe('Test -> Operation Result :', function() {
   });
 
   it('if number not divisible by three or five, return itself ', function() {
-    test.fizzbuzz(8).should.equal("Buzz");
+    test.fizzbuzz(8).should.equal(8);
   });
 })
