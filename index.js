@@ -6,5 +6,5 @@ module.exports = function(num){
       result = x[1]
     }
   })
-  return hasil
+  return result
 }
