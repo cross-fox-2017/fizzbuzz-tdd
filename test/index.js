@@ -5,12 +5,12 @@ const fizzbuzz = require('../index');
 
 describe('menjalankan fungsi fizzbuzz', function() {
   it('menghasilkan fizz', function() {
-      fizzbuzz(3).should.equal("fizz");
+      fizzbuzz(18).should.equal("fizz");
   });
   it('menghasilkan buzz', function() {
-      fizzbuzz(5).should.equal("buzz");
+      fizzbuzz(35).should.equal("buzz");
   });
   it('menghasilkan fizzbuzz', function() {
-      fizzbuzz(15).should.equal("fizzbuzz");
+      fizzbuzz(30).should.equal("fizzbuzz");
   });
 });

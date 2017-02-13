@@ -1,11 +1,10 @@
 module.exports = function(num){
-  if(num%15==0){
-    return 'fizzbuzz'
-  }
-  else if(num%5==0){
-    return 'buzz'
-  }
-  else if(num%3==0){
-    return 'fizz'
-  }
+  const data = [[5,'buzz'],[3,'fizz'],[15,'fizzbuzz']]
+  let hasil = ""
+  data.forEach(function(x){
+    if(num%x[0]==0){
+     hasil = x[1]
+    }
+  })
+  return hasil
 }
