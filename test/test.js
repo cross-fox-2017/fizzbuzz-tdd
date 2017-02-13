@@ -1,4 +1,5 @@
 const expect = require('chai').expect
+const fizzbuzz = require('../fizzbuzz')
 
 describe("fizzbuzz testing", function() {
   it('expect to to return something', function() {
